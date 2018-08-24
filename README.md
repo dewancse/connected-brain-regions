@@ -5,6 +5,7 @@ SMT-Neurophysiology is a web-based tool to find connectivity between a given set
 Please do the following steps to install the SMT-Neurophysiology in your workspace:
 
 - `git clone https://github.com/dewancse/connected-brain-regions.git`
+- `npm install` to install packages
 - Open `index.html` home page in the browser
 
 ### SMT-Neurophysiology workflow

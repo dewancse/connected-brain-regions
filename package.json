@@ -1,12 +1,12 @@
 {
-  "name": "steiner_approx",
+  "name": "SMT-Neurophysiology",
   "version": "1.0.0",
-  "description": "An approximate Steiner solver",
+  "description": "SMT-Neurophysiology is a web-based tool to find connectivity between a given set of brain regions",
   "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "open-physiology",
+  "author": "Dewan Sarwar",
   "license": "MIT",
   "dependencies": {
     "d3": "^3.5.6",

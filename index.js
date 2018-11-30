@@ -100,6 +100,7 @@ function test(a, b, c) {
 function steiner(nodes, edges, required) {
     var xnodes = [];
     var xedges = [];
+
     /*
      * Make copies of nodes and edges that can be annotated,
      * and annotate them.
@@ -565,12 +566,15 @@ function draw(result) {
             // Length of path from center of source node to center of target node
             var dr = Math.sqrt(dx * dx + dy * dy);
 
-            return "M" +
-                d.source.x + "," +
-                d.source.y + "A" +
-                dr + "," + dr + " 0 0,1 " +
-                d.target.x + "," +
-                d.target.y;
+            // For making curvy lines
+            // return "M" +
+            //     d.source.x + "," +
+            //     d.source.y + "A" +
+            //     dr + "," + dr + " 0 0,1 " +
+            //     d.target.x + "," +
+            //     d.target.y;
+
+            return "M" + d.source.x + "," + d.source.y + "L" + d.target.x + "," + d.target.y;
         });
 
         node.attr("transform", function (d) {
